@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > h3{
+            display: none;
+        }
+
+        div:hover > h3{
+            display: block;
+            color: black;
+        }
+
+        div:hover{
+            color: blue;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de pseudo-classe</h1>
+    <div>
+    <h2>Menu</h2>
+    <h3>Página inicial</h3>
+    <h3><a href="login.html" target="_blank" rel="External">Login</a></h3>
+    <h3>Meu perfil</h3>
+    </div>
+
+    
+</body>
+</html>
