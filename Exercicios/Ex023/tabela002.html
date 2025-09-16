@@ -13,6 +13,11 @@
             border-collapse: collapse;
 
         }
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px;
+        }
         thead{
             background-color: gray;
             color: white;
@@ -38,6 +43,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (LEGENDA/TITULO DA TABELA)
             THEAD
                 TR, TD, TH
             TBODY
@@ -47,10 +53,11 @@
     -->
 
     <Table>
+        <caption>Popução das Unidades Federativas</caption>
         <thead>
-            <tr>
-              <th>população</th>  
-              <th>Estado</th>
+            <tr>  
+              <th scope="col">Estado</th>
+              <th scope="col" style="width: 50px;">população</th>
             </tr>
         </thead>
         <tbody>
@@ -156,7 +163,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total da população</th>
+            <th s>Total da população</th>
             <td class="num"><strong>213.421.037</strong></td>
         </tfoot>
     </Table>
